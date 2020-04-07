@@ -7,15 +7,15 @@
 Usage: linear_model.R --processed_data=<processed_data> --path_to_images=<path_to_images> --path_to_lmdata=<path_to_lmdata>" -> doc
 
 # laod packages
-library(docopt)
-library(tidyverse)
-library(broom)
-library(purrr)
-library(glue)
-library(grid)
-library(gridExtra)
-library(png)
-library(here)
+suppressMessages(library(docopt))
+suppressMessages(library(tidyverse))
+suppressMessages(library(broom))
+suppressMessages(library(purrr))
+suppressMessages(library(glue))
+suppressMessages(library(grid))
+suppressMessages(library(gridExtra))
+suppressMessages(library(png))
+suppressMessages(library(here))
 
 # read in command-line arguments
 opt <- docopt(doc)

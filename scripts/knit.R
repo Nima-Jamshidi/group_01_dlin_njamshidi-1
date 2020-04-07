@@ -7,9 +7,9 @@
 Usage: knit.R --finalreport=<final_report>" -> doc
 
 # laod packages
-library(docopt)
-library(rmarkdown)
-library(glue)
+suppressMessages(library(docopt))
+suppressMessages(library(rmarkdown))
+suppressMessages(library(glue))
 
 # read in command-line arguments
 opt <- docopt(doc)
